@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>CareSync</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+```
+<h1>CareSync 💊</h1>
+
+<h2>Hey👋</h2>
+
+
+<div class="medicine-card">
+    <h3>BP Tablet</h3>
+    <p>Dosage: 1 tablet</p>
+    <p>Time: 08:00 AM</p>
+
+    <button onclick="markTaken(this)">
+        Mark Taken
+    </button>
+</div>
+
+
+<div class="medicine-card">
+    <h3>Vitamin D</h3>
+    <p>Dosage: 1 capsule</p>
+    <p>Time: 02:00 PM</p>
+
+    <button onclick="markTaken(this)">
+        Mark Taken
+    </button>
+</div>
+
+
+
+
+<div id="medicineList"></div>
+```
+
+</div>
+<div class="add-form">
+
+    <h3>Add New Medicine</h3>
+
+    <input 
+        type="text" 
+        id="medicineName" 
+        placeholder="Medicine Name"
+    >
+
+    <input 
+        type="text" 
+        id="dosage" 
+        placeholder="Dosage"
+    >
+
+    <input 
+    type="time" 
+    id="time"
+>
+    >
+
+    <button onclick="addMedicine()">
+        Add Medicine
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+
